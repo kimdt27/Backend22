@@ -1,3 +1,4 @@
+
 <?php
 $myVar1 = 2;
 $myVar2 = 3;
