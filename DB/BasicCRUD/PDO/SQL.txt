@@ -1,0 +1,48 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
+--
+-- Vært: 127.0.0.1:3306
+-- Genereringstid: 20. 02 2019 kl. 19:08:26
+-- Serverversion: 5.7.24
+-- PHP-version: 7.2.14
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Database: `backend`
+--
+CREATE DATABASE IF NOT EXISTS `backend` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
+USE `backend`;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur-dump for tabellen `customers`
+--
+
+DROP TABLE IF EXISTS `customers`;
+CREATE TABLE IF NOT EXISTS `customers` (
+  `ID` int(10) NOT NULL AUTO_INCREMENT,
+  `username` varchar(80) COLLATE utf8_bin NOT NULL,
+  `Fname` varchar(100) COLLATE utf8_bin NOT NULL,
+  `Lname` varchar(100) COLLATE utf8_bin NOT NULL,
+  `email` varchar(150) COLLATE utf8_bin NOT NULL,
+  `rank` int(2) NOT NULL,
+  `description` varchar(255) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Data dump for tabellen `customers`
+--
+
+INSERT INTO `customers` (`ID`, `username`, `Fname`, `Lname`, `email`, `rank`, `description`) VALUES
+(1, 'nerdy', 'Kim', 'Thøisen', 'kdt@eqdasv.dk', 1, 'Just some random description 1'),
+(2, 'Killa', 'Jens', 'Jensens', 'jj@jj.dk', 2, 'Just some random description 2'),
+(3, '.::joyojo::.', 'Peter', 'Petersen', 'pp@pp.dk', 2, 'Just some random description 3'),
+(4, 'dunnos!', 'Carsten', 'Carstensen', 'cc@cc.dk', 3, 'Just some random description 4');
+COMMIT;
