@@ -1,0 +1,28 @@
+-- phpMyAdmin SQL Dump
+-- version 4.1.14
+-- http://www.phpmyadmin.net
+--
+-- V�rt: 127.0.0.1
+-- Genereringstid: 07. 10 2014 kl. 21:44:38
+-- Serverversion: 5.6.17
+-- PHP-version: 5.5.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `login`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Struktur-dump for tabellen `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `user` varchar(30) NOT NULL,
+  `pass` varchar(60) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
