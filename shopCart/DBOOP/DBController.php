@@ -23,11 +23,4 @@ class DBController {
 		if(!empty($results))
 			return $results;
 	}
-	
-	function numRows($query) {
-		$result  = mysqli_query($this->conn,$query);
-		$rowcount = mysqli_num_rows($result);
-		return $rowcount;	
-	}
 }
-?>
