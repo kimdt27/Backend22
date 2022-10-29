@@ -6,7 +6,7 @@ if(isset($_POST['Submit'])){
     //$text = htmlspecialchars($_POST['text']);
     //$text = mysqli_real_escape_string($connection,htmlspecialchars(trim($_POST['text'])));
     //$text = mysql_prep($_POST['text']);
-    $query = "INSERT INTO sec (text) VALUES ('$text')";
+    $query = "INSERT INTO sec (text) VALUES ($text)";
     $result = mysqli_query($connection, $query);
 echo $query;
     echo "<h1>Succesfully added!</h1>";
