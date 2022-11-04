@@ -5,7 +5,7 @@ if (empty($_SESSION['token'])) {
 }
 $token = $_SESSION['token'];
 
-//$IP = getenv ( "REMOTE_ADDR" );
+$IP = getenv ( "REMOTE_ADDR" );
 ?>
 <!DOCTYPE html>
 <html lang="en">
